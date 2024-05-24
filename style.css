@@ -1,0 +1,174 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	color: rgb(0, 0, 0);
+
+}
+
+header {
+	background-color: rgb(119, 116, 116);
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img {
+	height: 90px;
+	width: 90px;
+	margin-bottom: -50px;
+	margin-top: -10px;
+	
+}
+
+.search form {
+	display: flex;
+	align-items: center;
+	
+	
+
+}
+
+.search input[type="text"] {
+	padding: 10px;
+	border: none;
+	border-radius: 3px 3px 3px 3px;
+	width: 400px;
+	height: 15px;
+	
+}
+
+.search button[type="submit"] {
+	padding: 5px;
+	background-color: rgb(119, 116, 116);
+	color: #fff;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	margin-right: 490px;
+	
+}
+
+nav {
+	background-color:rgb(119, 116, 116);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	padding: 20px;
+}
+
+h2, h3 {
+	margin-top: 0;
+}
+.sports-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sports-list li {
+    margin: 10px;
+    
+}
+
+/* .sports-list a {
+	display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+        top: 401px;
+        left: 300px;
+} */
+/*.Basketball {
+
+    background-image: url("./image/basketball.webp");
+    background-size: cover;
+    height: 400px;
+    width: 710px;
+   
+    
+
+}
+.Football {
+    
+    background-image: url("./image/football.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 710px;
+    
+    
+
+}
+.Volleyball {
+    
+    background-image: url("./image/volleyball.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 710px;
+   
+  
+
+}
+.Handball {
+    
+    background-image: url("./image/handball.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 710px;
+    
+  
+
+}
+.Tennis {
+    
+    background-image: url("./image/tennis.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 710px;
+   
+   
+}
+.Golf {
+    
+    background-image: url("./image/Golf.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 710px;
+  
+   
+
+} */
+a img{
+	width: 719.6px;
+	height: 400px;
+	
+}

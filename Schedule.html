@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(63, 72, 83);
+            font-family: sans-serif;
+            color: rgb(220, 220, 220);
+            padding: 50px;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        p {
+            margin-top: .7em;
+        }
+
+        .warning {
+            color: rgb(62, 148, 236);
+        }
+
+        .st_viewport {
+            max-height: 500px;
+            overflow: auto;
+        }
+
+        [data-table_id="1"] {
+            background-color: rgb(255, 115, 0);
+        }
+
+        [data-table_id="2"] {
+            background-color: rgb(61, 53, 39);
+            color: rgb(220, 220, 220);
+        }
+
+        [data-table_id="3"] {
+            background-color: rgba(168, 189, 4, .8);
+        }
+
+        ._rank {
+            min-width: 120px;
+        }
+
+        ._id {
+            min-width: 60px;
+        }
+
+        ._name {
+            min-width: 130px;
+        }
+
+        ._surname {
+            min-width: 130px;
+        }
+
+        ._year {
+            min-width: 80px;
+        }
+
+        ._section {
+            min-width: 130px;
+        }
+
+        pre {
+            overflow: auto;
+        }
+
+        .st_viewport {
+            background-color: rgb(62, 148, 236);
+            color: rgb(27, 30, 36);
+            margin: 20px 0;
+        }
+
+        .st_table_header {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            background-color: rgb(27, 30, 36);
+            color: rgb(220, 220, 220);
+        }
+
+        .st_table_header h2 {
+            font-weight: 400;
+            margin: 0 20px;
+            padding: 20px 0 0;
+        }
+
+        .st_table_header .st_row {
+            color: rgba(220, 220, 220, .7);
+        }
+
+        .st_table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .st_row {
+            display: flex;
+            margin: 0;
+        }
+
+        .st_table .st_row:nth-child(even) {
+            background-color: rgba(0, 0, 0, .1)
+        }
+
+        .st_column {
+            padding: 10px 20px;
+        }
+
+        .btn{
+            box-sizing: border-box;
+            margin-top: 8px;
+            padding: 8px 32px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s all;
+        }
+
+        .btn:hover{
+            font-size: 21px;
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Table</h1>
+    <div class="st_viewport">
+        <div class="st_table">
+            <div class="st_table_header">
+                <div class="st_row">
+                    <div class="st_column _rank">Rank</div>
+                    <div class="st_column _id">ID</div>
+                    <div class="st_column _name">Name</div>
+                    <div class="st_column _surname">Surname</div>
+                    <div class="st_column _year">Year</div>
+                    <div class="st_column _section">Section</div>
+                </div>
+            </div>
+            <div class="st_row" data-table_id="1">
+                <div class="st_column _rank">1</div>
+                <div class="st_column _id">101</div>
+                <div class="st_column _name">Alice</div>
+                <div class="st_column _surname">Smith</div>
+                <div class="st_column _year">2024</div>
+                <div class="st_column _section">A</div>
+            </div>
+            <div class="st_row" data-table_id="2">
+                <div class="st_column _rank">2</div>
+                <div class="st_column _id">102</div>
+                <div class="st_column _name">Bob</div>
+                <div class="st_column _surname">Johnson</div>
+                <div class="st_column _year">2023</div>
+                <div class="st_column _section">B</div>
+            </div>
+            <div class="st_row" data-table_id="3">
+                <div class="st_column _rank">3</div>
+                <div class="st_column _id">103</div>
+                <div class="st_column _name">Charlie</div>
+                <div class="st_column _surname">Brown</div>
+                <div class="st_column _year">2022</div>
+                <div class="st_column _section">C</div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+    </div>
+    <button class="btn">Submit</button>
+</body>
+</html>
